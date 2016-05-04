@@ -51,16 +51,16 @@ app.post('/signup', function(req, res) {
   var nameField = req.body.name,
       emailField = req.body.email,
       previewBool = req.body.previewAccess;
-  res.send(200);
   signup(nameField, emailField, previewBool);
+  res.send(200);
 });
 
 //Add signup form data to database.
-var signup = function (nameSubmitted, emailSubmitted, previewPreference) {
+function signup (nameSubmitted, emailSubmitted, previewPreference) {
   var formData = new Subscriber({
-      email: emailSubmitted,
-      name: nameSubmitted,
-      preview: previewPreference
+    email: emailSubmitted,
+    name: nameSubmitted,
+    preview: previewPreference
   });
   formData.save(function(err) {
     if (err) {
