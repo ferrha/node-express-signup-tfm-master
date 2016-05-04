@@ -4,3 +4,6 @@ Repository with the code for the project to run in a local server. No Cloud solu
 Environment variables needed:
 + userAccount: the sender email account
 + passAccount: the password of the sender email account
+
+TODO
+- Add async to signup execution and 200 code.
