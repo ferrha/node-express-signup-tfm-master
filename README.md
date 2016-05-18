@@ -1,5 +1,5 @@
 # node-express-signup-tfm-master
-Repository with the code for the project to run in a local server. No Cloud solution.
+Repository with the code for the project to run in a local server or in a No Cloud solution.
 
 Environment variables needed:
 + userAccount: the sender email account
